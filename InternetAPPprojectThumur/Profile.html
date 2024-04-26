@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    
+ <head>
+    <title>Profile</title>
+    <link rel="icon" type="image/x-icon" href="projectpic/logo1.png">
+    <link rel="stylesheet" type href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+</head>
+
+    <body class="pp">
+      <header> 
+        <img src="projectpic/logo.png" alt="logo" width="110" height="90" id="logo">
+        <a href="profile.html"> <img src="projectpic/profile.png" alt="profile" width="50" height="50" id="profile">
+       <a href="cart.html"> <img src="projectpic/caertpage.png" alt="profile" width="70" height="60" id="cartpage">
+     </header>  
+
+
+    <nav>
+      <a href="Home.HTML" class="slink" >Home</a> &nbsp;
+      <a href="Products.html" class="slink" >Products</a> &nbsp;
+      <a href="Educational.html" class="slink" >Educational</a> &nbsp;
+      <a href="BabyAndPreschool.html" class="slink">Baby &Preschool</a> &nbsp;
+      <a href="EntertainerToys.html" class="slink">Entertainer Toys</a> &nbsp;
+      <a href="ToysForLearningDisabilities.html" class="slink">Toys For Learning Disabilities</a> &nbsp;
+
+    </nav>
+
+
+   <main class="pm">
+  <h1 style="color: #575757; text-align: left; margin-left: 100px;margin-top: 50px;">Profile</h1>
+
+  
+  <div class="container">
+  <div class="profile-form">
+  <fieldset style="position: relative; width: 400px; padding: 20px; border-radius: 10px; border: 2px solid #CFC5B3;margin-left: 80px;margin-top: 25px; background-color:#F5D5C9">
+    
+    <div style="display: grid; grid-template-rows: repeat(3, 1fr); grid-template-columns: repeat(2, 1fr); gap: 10px;">
+
+      <label for="name" style="color: #575757;">Name:</label>
+      <input type="text" id="name" name="name" required
+      style="padding: 5px; border-radius: 7px;border-color:#CFC5B3; border: 1px solid #CFC5B3;">
+
+
+      <label for="lastname" style="color: #575757;">Last Name:</label>
+      <input type="text" id="lastname" name="lastname"required
+      style="padding: 5px; border-radius: 7px;border-color:#CFC5B3; border: 1px solid #CFC5B3;">
+
+      <label for="email" style="color: #575757;">Email:</label>
+      <input type="email" id="email" name="email"required
+      style="padding: 5px; border-radius: 7px;border-color:#CFC5B3; border: 1px solid #CFC5B3;">
+
+      <label for="phone" style="color: #575757;">Phone Number:</label>
+      <input type="tel" id="phone" name="phone"required
+      style="padding: 5px; border-radius: 7px;border-color:#CFC5B3; border: 1px solid #CFC5B3;">
+
+      <label for="location" style="color: #575757;">Location:</label>
+      <input type="text" id="location" name="location"required
+      style="padding: 5px; border-radius: 7px;border-color:#CFC5B3; border: 1px solid #CFC5B3;">
+
+      <label for="postal" style="color: #575757;">Postal Code:</label>
+      <input type="text" id="postal" name="postal"required
+      style="padding: 5px; border-radius: 7px;border-color:#CFC5B3; border: 1px solid #CFC5B3;">
+    </div>
+    <input type="submit" value="Save Changes" style="background-color: #81A5B0; color: #575757; padding: 10px 20px; border-radius: 7px; border: none; cursor: pointer; margin-top: 20px;">
+
+    </div>
+       <img img src="projectpic/box.png" alt="box" id ="box" width="300" height="300" style="  margin-left:700px ;margin-top:-700px; position: relative;">
+
+
+
+    </div>
+  </fieldset>
+
+
+</main>
+
+
+
+
+    
+    <footer>
+      
+    </footer>
+
+
+
+   <script>
+  
+  var nameField = document.getElementById('name');
+  var emailField = document.getElementById('email');
+  var lastnameField = document.getElementById('lastname');
+  var phoneNumberField = document.getElementById('phone');
+  var locationField = document.getElementById('location');
+  var postalField = document.getElementById('postal');
+
+ 
+  var textField = document.getElementById('text');
+
+ 
+  window.addEventListener('load', function() {
+    nameField.value = localStorage.getItem('name');
+    emailField.value = localStorage.getItem('email');
+    lastnameField.value = localStorage.getItem('lastname');
+    phoneNumberField.value = localStorage.getItem('phone');
+    locationField.value = localStorage.getItem('location');
+    postalField.value = localStorage.getItem('postal');
+    updateTextField();
+  });
+
+  
+  nameField.addEventListener('input', function() {
+    localStorage.setItem('name', nameField.value);
+    updateTextField();
+  });
+  emailField.addEventListener('input', function() {
+    localStorage.setItem('email', emailField.value);
+    updateTextField();
+  });
+  lastnameField.addEventListener('input', function() {
+    localStorage.setItem('lastname', lastnameField.value);
+    updateTextField();
+  });
+
+  phoneNumberField.addEventListener('input', function() {
+    localStorage.setItem('phone', phoneNumberField.value);
+    updateTextField();
+  });
+
+  locationField.addEventListener('input', function() {
+    localStorage.setItem('location', locationField.value);
+    updateTextField();
+  });
+
+  postalField.addEventListener('input', function() {
+    localStorage.setItem('postal', postalField.value);
+    updateTextField();
+  });
+
+
+  function updateTextField() {
+    textField.value = "Name: " + nameField.value + "\nEmail: " + emailField.value + "\nFull Name: " + lastnameField.value+ "\nPhone Number " + phoneNumberField.value + "\nLocation " + locationField.value + "\nPostal Code " + postalField.value;
+  }
+</script>
+
+
+    </body>
+    
+</html>    

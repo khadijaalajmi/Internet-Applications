@@ -1,0 +1,240 @@
+
+.scroll-pane {
+  height: 300px; 
+  overflow: auto;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #FFF8F1;
+  color: #221811;
+  font-family: Verdana, Arial, sans-serif;
+}
+.pp{
+  background-image:url("projectpic/puzzle.png") ;
+  background-repeat: repeat;
+  background-position:center center;
+  background-attachment: fixed;
+
+}
+
+.pm{
+  display: block;
+}
+html{
+  height: 100%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow: auto;
+}
+
+.image{
+  top: 0;
+}
+
+
+header {
+  top:0;left: 0;right: 0;
+  padding: 2rem 9%;
+  justify-content: space-between;
+  z-index: 500;
+  background-color: #81A5B0;
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+right: 0;
+padding-bottom: 10px;
+display: flex;
+position: absolute;
+}
+
+.stars{
+  background-image:url("projectpic/backstars.jpg") ;
+  background-repeat: repeat;
+
+}
+.cc{
+  padding-bottom: 3em;
+  background-image:url("projectpic/cloud.png") ;
+  background-repeat: no-repeat;
+
+}
+
+#profile{
+   top: 0;
+left: 5px;
+padding-bottom: 10px;
+display: flex;
+position: absolute;
+}
+ 
+#cartpage{
+  top: 0;
+  left: 50px;
+  padding-bottom: 10px;
+  display: flex;
+  position: absolute;
+}
+
+
+nav {
+  justify-content: space-evenly;
+  text-align: center;
+  font-size: 1.1em;
+  padding-top: 20px;
+  text-decoration: none;
+  background-color: #F5D5C9;
+  border-radius: 25px;
+  height: 40px;
+  margin-top: 2rem;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+
+}
+
+footer {
+  background-color: #F4BA68;
+  position: absolute;
+  bottom:0 px ;
+  width: 100%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.main-contet{
+display: flex;
+}
+
+.main-contet .box{
+flex-basis: 50%;
+padding: 10px 20px;
+
+}
+
+main {
+  padding-bottom: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  display: flex;
+  max-width: 100%; 
+  margin: 0 auto; 
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.slink {
+  color: white;
+  text-decoration: none;
+
+}
+
+.slink:hover {
+  text-decoration: underline;
+}
+
+
+/* style for items  */
+
+.item {
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
+  position: relative;
+  width: 500px;
+}
+
+.item img {
+  width: 200px;
+  height: 200px;
+  transition: transform 0.3s;
+}
+
+
+
+.itemContainer {
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
+  position: relative;
+  width: 500px; 
+}
+
+.description {
+  margin-top: 10px; 
+}
+
+
+.item img {
+  width: 200px;
+  height: 200px;
+  transition: transform 0.3s;
+}
+
+.item img:hover {
+  transform: scale(1.1);
+}
+
+.item .description {
+  margin-top: 10px;
+}
+
+.item .price {
+  margin-top: 5px;
+}
+
+.item .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.item:hover .overlay {
+  opacity: 1;
+}
+
+.item .overlay img {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+.item .overlay .buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.item .overlay .button {
+  background-color: #F4BA68;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* style for video */
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; 
+  overflow: hidden;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+

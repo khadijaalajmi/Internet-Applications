@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html lang="en">   
+    
+ <head>
+    <title>Shopping Cart</title>
+    <link rel="icon" type="image/x-icon" href="projectpic/logo1.png">
+    <link rel="stylesheet"  href="stylepay.css">
+    
+    <style>
+            
+    #payment-method {
+        width: 102%;
+        height: 30px;
+    }
+
+  </style>
+
+    </head>
+
+    
+    <body>
+     <header>
+      <img src="projectpic/logo.png" alt="logo" width="110" height="90" id="logo">
+      <a href="profile.html"> <img src="projectpic/profile.png" alt="profile" width="50" height="50" id="profile">
+        <a href="cart.html"> <img src="projectpic/caertpage.png" alt="profile" width="70" height="60" id="cartpage">
+
+    </header> 
+      
+
+
+    <nav>
+        <a href="Home.HTML" class="slink"> Home </a> &nbsp;
+        <a href="Products.html" class="slink"> Products </a> &nbsp;
+        <a href="Educational.html" class="slink"> Educational </a> &nbsp;
+        <a href="BabyAndPreschool.html" class="slink"> Baby &Preschool </a> &nbsp;
+        <a href="EntertainerToys.html" class="slink"> Entertainer Toys </a> &nbsp;
+        <a href="ToysForLearningDisabilities.html" class="slink"> Toys For Learning Disabilities </a> &nbsp;
+
+
+    </nav>
+
+
+      
+
+
+
+   <main>
+
+    <div style="display: inline-block; justify-content: left;">
+    <div style="margin-left: 50px;">
+
+
+  <h1 style="color: #575757; text-align: left; margin-left: 100px;margin-top: 50px;">Billing Address:</h1>
+
+  
+  <div class="container">
+  <div class="address-form">
+    <fieldset style="position: relative; width: 400px; padding: 20px; border-radius: 10px; border: 2px solid #CFC5B3;margin-left: 80px;margin-top: 25px; background-color:#F5D5C9;">
+      <div style="display: grid; grid-template-rows: repeat(5, 1fr); grid-template-columns: 1fr 1fr; gap: 10px;">
+
+        <label for="fname" style="color: #575757;">Full Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="Raghad Alsebayyil" required style="padding: 5px; border-radius: 7px;border-color:#CFC5B3; border: 1px solid #CFC5B3;">
+
+        <label for="email" style="color: #575757;">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Raghad@hotmail.com" required style="padding: 5px; border-radius: 7px;border-color:#CFC5B3; border: 1px solid #CFC5B3;">
+
+        <label for="phone" style="color: #575757;">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="966 123 456 780" required style="padding: 5px; border-radius: 7px;border-color:#CFC5B3; border: 1px solid #CFC5B3;">
+
+        <label for="city" style="color: #575757;">City:</label>
+        <input type="text" id="city" name="city" placeholder="Riyadh" required style="padding: 5px; border-radius: 7px;border-color:#CFC5B3; border: 1px solid #CFC5B3;">
+
+        <div style="display: flex; align-items: center;">
+          <label for="area" style="color: #575757; ">Area:&nbsp;&nbsp;&nbsp;</label>
+          <input type="text" id="area" name="area" placeholder="Al Malqa" required style="padding: 5px; border-radius: 7px;border-color:#CFC5B3; border: 1px solid #CFC5B3; width: 110px;  ">
+        </div>
+
+        <div style="display: flex; align-items: center;">
+          <label for="zipcode" style="color: #575757;">Zip Code:&nbsp;&nbsp;</label>
+          <input type="zipcode" id="zipcode" name="zipcode" placeholder="12345" required style="padding: 5px; border-radius: 7px;border-color:#CFC5B3; border: 1px solid #CFC5B3; width: 100px; ">
+        </div>
+
+      </div>
+
+      <button id="save-changes-btn">Save Changes</button>
+    </fieldset>
+  </div>
+</div></div></div>
+
+
+    <div style="display: inline-block; justify-content: right;">
+    <div style="margin-left: 150px;">
+
+    <h1 style="color: #575757; text-align: left; margin-left: 100px;margin-top: 50px;">Payment Information:</h1>
+
+  
+  <div class="container">
+  <div class="payment-form">
+  <fieldset style="position: relative; width: 400px; padding: 20px; border-radius: 10px; border: 2px solid #CFC5B3;margin-left: 80px;margin-top: 25px; background-color:#F5D5C9;">
+    
+    <div style="display: grid; grid-template-rows: repeat(3, 1fr); grid-template-columns: repeat(2, 1fr); gap: 5px;">
+
+      <label for="cards-accepted" style="color: #575757;">Cards Accepted:</label>
+         <img src="projectpic/card_img.png" width="200" height="30" alt="cardsimg">
+
+     
+           <label for="card-num" style="color: #575757;">Card Number:</label>
+      <input type="text" id="card-num" name="card-num" placeholder="1234 1234 1234 1234" required
+      style="padding: 5px; border-radius: 7px;border-color:#CFC5B3; border: 1px solid #CFC5B3; height:15px; ">
+
+      <label for="card-name" style="color: #575757;">Name On Card:</label>
+      <input type="text" id="card-name" name="card-name" placeholder="Raghad Alsebayyil" required
+      style="padding: 5px; border-radius: 7px;border-color:#CFC5B3; border: 1px solid #CFC5B3; height:15px; ">
+
+      <label for="expiry-date" style="color: #575757;">Expiry Date:</label>
+      <input type="date" id="expiry-date" name="expiry-date"required
+      style="padding: 5px; border-radius: 7px;border-color:#CFC5B3; border: 1px solid  #CFC5B3; width:70px; height:15px; ">
+
+
+      <label for="cvv" style="color: #575757;">CVV:</label>
+      <input type="text" id="cvv" name="cvv" placeholder="123" required
+      style="padding: 5px; border-radius: 7px;border-color:#CFC5B3; border: 1px solid #CFC5B3; width:50px; height:15px; ">
+
+
+    </div>
+
+
+<button id="pay-btn" onclick="handlePayment()">Pay</button>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+  function handlePayment() {
+    const cardNumInput = document.getElementById("card-num");
+    const cardNameInput = document.getElementById("card-name");
+    const expiryDateInput = document.getElementById("expiry-date");
+    const cvvInput = document.getElementById("cvv");
+
+    const cardNumValue = cardNumInput.value.replace(/ /g, ''); // remove spaces from card number
+
+    if (cardNumValue.length !== 16) {
+      function4("Card number must be 16 digits.");
+    } else if (cardNameInput.value === "") {
+      function4("You have to write your name.");
+    } else if (!/^[a-zA-Z ]+$/.test(cardNameInput.value)) {
+      function4("Name on card must contain only letters.");
+    } else {
+      const currentDate = new Date();
+      const expiryDate = new Date(expiryDateInput.value);
+
+      if (expiryDate <= currentDate) {
+        function4("Expiry date must be after today's date.");
+      } else if (!/^\d{3}$/.test(cvvInput.value)) {
+        function4("CVV must be 3 digits.");
+      } else {
+        function3();
+      }
+    }
+  }
+
+  function function3() {
+    swal("Wonderful!", "We have successfully received your payment. Thank you!", "success");
+  }
+
+  function function4(errorMessage) {
+    swal("Error", errorMessage, "error");
+  }
+</script>
+
+
+
+
+
+  </fieldset></div><div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" ></script>
+
+  </div></div>
+
+</main>
+
+
+    
+
+<footer>
+     <div class="main-contet">
+            <div class="left box">
+                <h2>About Our Shop:</h2>
+                <div class="content">
+                    <p>Thumur is an online toy store that specializes in providing a wide range
+                        of toys for children of different age groups. 
+                       The website offers a diverse selection of toys in various categories, 
+                       including Educational, Baby & Preschool,
+                        Entertainer Toys, and Toys for Learning Disabilities.</p>
+                        <div class="social">
+                            <img src="projectpic/twitter.png" alt="twitter" width="30" height="30">
+                            <img src="projectpic/facebook.png " alt="facebook" width="30" height="30">
+                            <img src="projectpic/insta.png" alt="insta" width="33" height="33">
+
+                        </div>
+
+
+                </div>
+            </div>
+
+        
+         <div class="center box">
+            <h2>Address:</h2>
+            <div class="content">
+                <div class="place">
+                    <span class="map"><img src="projectpic/location.png" alt="location" width="30" height="40"></span>
+                    <span class="text">Saudia Arabia-Makkah</span>
+
+                </div>
+
+                <div class="phone">
+                    <span class="phone"><img src="projectpic/phone.png" alt="phone" width="30" height="30"></span>
+                    <span class="text">+966 500000000</span>
+
+                </div>
+
+                <div class="email">
+                    <span class="email"><img src="projectpic/mail.png" alt="mail" width="30" height="30"></span>
+                    <span class="text">Thummer@mail.com</span>
+
+                </div>
+
+            </div>
+
+         </div>
+
+         <div class="right box">
+            <h2>Contact Us:</h2>
+            <div class="content">
+                <form action="#">
+                    <div class="email">
+                        <div class="text">Email *</div>
+                        <input type="email" required>
+                    </div>
+                    <div class="msg">
+                        <div class="text">Massage *</div>
+                        <textarea rows="2" cols="25" required></textarea>
+                    </div>
+                    <div class="btn">
+                        <button type="submit">Send</button>
+                    </div>
+                    
+                </form>
+
+            </div>
+         </div>
+
+           
+        
+       
+        </div>
+    </footer>
+
+
+
+
+
+
+    </body>
+    
+</html>
+
+
+
+
+
+

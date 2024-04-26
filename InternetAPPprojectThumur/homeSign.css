@@ -1,0 +1,305 @@
+
+.animated-image {
+  position: relative;
+  animation: moveUpDown 2s infinite;
+}
+
+@keyframes moveUpDown {
+  0% {
+      top: 0;
+  }
+  50% {
+      top: -20px;
+  }
+  100% {
+      top: 0;
+  }
+}
+
+.scroll-pane {
+  height: 300px; 
+  overflow: auto;
+}
+
+
+/* ----------------- */
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #FFF8F1;
+  color: #221811;
+  font-family: Verdana, Arial, sans-serif;
+
+}
+
+header {
+  top:0;left: 0;right: 0;
+  padding: 2rem 9%;
+  justify-content: space-between;
+  z-index: 500;
+  background-color: #81A5B0;
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  right: 0;
+  padding-bottom: 10px;
+  display: flex;
+  position: absolute;
+  }
+
+  .cc{
+    background-image: url(projectpic/cloud.png);
+              background-repeat: repeat;
+              background-position: center;
+              background-attachment: fixed;
+  
+  }
+  
+  #profile{
+  top: 0;  
+  left: 5px;
+  padding-bottom: 10px;
+  display: flex;
+  position: absolute;
+  }
+   
+  #cartpage{
+    top: 0;  
+    left: 50px;
+    padding-bottom: 10px;
+    display: flex;
+    position: absolute;
+  }
+  
+
+nav {
+  justify-content: space-evenly;
+  text-align: center;
+  font-size: 1.1em;
+  padding-top: 20px;
+  text-decoration: none;
+  background-color: #F5D5C9;
+  border-radius: 25px;
+  height: 40px;
+  margin-top: 2rem;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+
+
+
+footer{
+ 
+
+  background-color: #F4BA68;
+  position: absolute;
+  bottom:0 px ;
+  width: 100%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+
+}   
+
+
+main {
+  padding-bottom: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  display: block;
+  max-width: 100%; 
+  margin: 0 auto; 
+  font-family: "Comic Sans MS", cursive, sans-serif;
+
+}
+
+
+.slink {
+  color: white;
+  text-decoration: none;
+
+}
+
+.slink:hover {
+  text-decoration: underline;
+}
+
+  .form-group {
+
+            margin-bottom: 20px;
+
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        .submit-button {
+            margin-top: 20px;
+        }
+
+         .form-container {
+            width: 400px;
+            padding-bottom: 10px;
+
+
+        }
+
+  .form-Body {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+             flex: 1;
+            margin-right: 20px;
+  }
+
+
+ .welcome-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 200px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+
+            color: #F4A460;
+            margin-top: 10px;
+
+
+        }
+
+
+  label{
+ text-align: center;
+
+  }
+
+  
+  a{
+     text-decoration: none;
+  }
+
+
+
+  #h1{
+
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 86px;
+   color: #F4A460;
+
+
+
+  }
+
+.button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #F5D5C9;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+         border-radius: 25px;
+
+        }
+
+
+
+#sidePics{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+
+
+
+}
+
+
+#phraseBottom{
+ display: flex;
+            justify-content: center;
+            align-items: center;
+             font-family: "Comic Sans MS", cursive, sans-serif;
+             color: #2F4F4F;
+
+ 
+
+}
+
+
+.sidePage{
+
+    margin-top: 0px;
+   /* margin-left: 400px;*/
+     flex: 1;
+  margin-left: 320px;
+  margin-top: 100px;
+   
+
+
+
+}
+
+.container {
+            display: flex;
+             padding-bottom: 300px;
+        }
+
+
+
+.message-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity  0.5s;
+
+}
+
+.message-popup-content {
+    background-color:#FFF8F1;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+     border-radius: 10px;
+
+    
+}
+
+.message-popup.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+

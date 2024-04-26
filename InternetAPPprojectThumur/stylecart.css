@@ -1,0 +1,182 @@
+
+
+body {
+            background-color: #FFF8F1;
+            color: #221811;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            background-image: url(projectpic/puzzle.png);
+            background-repeat: repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            min-height: 100%;
+            margin: 0;
+}
+
+header {
+  top:0;left: 0;right: 0;
+  padding: 2rem 9%;
+  justify-content: space-between;
+  z-index: 500;
+  background-color: #81A5B0;
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  right: 0;
+  padding-bottom: 10px;
+  display: flex;
+  position: absolute;
+  }
+
+#profile{
+left: 8px;
+top: 6px;
+display: flex;
+position: absolute;
+}
+ 
+#cartpage{
+  top: 0;
+  left: 50px;
+  padding-bottom: 10px;
+  display: flex;
+  position: absolute;
+}
+
+nav {
+  text-align: center;
+  font-size: 1.1em;
+  padding-top: 10px;
+  text-decoration: none;
+  background-color: #F5D5C9;
+  border-radius: 25px;
+  height: 40px;
+  margin-top: 30px;
+}
+
+footer {
+  background-color: #F4BA68;
+  position: absolute;
+  bottom:0 px ;
+  width: 100%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.main-contet{
+display: flex;
+}
+
+.main-contet .box{
+
+flex-basis: 50%;
+padding: 10px 20px;
+
+}
+
+main {
+  padding-bottom: 2em;
+  display: inline-block;
+}
+
+
+.slink {
+  color: white;
+  text-decoration: none;
+
+}
+
+.slink:hover {
+  text-decoration: underline;
+}
+
+
+#cart {
+  float:left;
+  margin-right: 70px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+  #products {
+  float:left;
+  margin-right: 70px;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+#cart-total {
+  float: left;
+  margin-left: 40px;
+  margin-top: 33px;
+  font-weight: semibold;
+}
+
+
+    #product-list div img {
+      width: 60px; 
+      height: auto; 
+          }
+
+
+    #checkout-btn {
+      background-color: #7f95a2;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      float: left;
+      margin-left: 250px;
+      margin-top: 90px;
+      
+    }
+
+    #checkout-btn:hover {
+      background-color: #6e8591;
+    }
+
+
+
+.product-content {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+
+
+.delete-product-btn {
+  border: none;
+  background-color: transparent;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 90px;
+  background-image: url("projectpic/trash.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+
+
+}
+
+.product-name{
+  line-height: 1.5;
+}
+
+
+
+#total-price {
+  float:left;
+  margin-left: 90px;
+  margin-top: 20px;
+  line-height: 0.8;
+}
+
